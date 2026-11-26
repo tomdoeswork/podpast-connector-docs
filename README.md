@@ -1,41 +1,62 @@
 # PodPast
 
-Hosted Claude connector. Turns the podcasts and YouTube shows you already follow into a searchable, askable knowledge source inside Claude. Ask what a guest said and get the answer back with the exact quote and the timestamp it came from.
+PodPast is a hosted connector for Claude and Claude Code. Add the podcasts and YouTube channels you follow, and Claude can answer a question across all of them at once. Each claim in the answer points to the episode and timestamp it came from. There is nothing to install.
 
 **Homepage:** https://podpast.ai
-**Status:** New, solo-built, Claude-native. Runs in Claude.ai today.
-**Transport:** Streamable HTTP (remote / hosted)
+**Examples:** https://podpast.ai/examples
+**Live demo (no signup):** https://podpast.ai/demo
+**Works with:** Claude (web, desktop, mobile) and Claude Code
+**Transport:** Streamable HTTP (remote, hosted)
+**Connector URL:** `https://api.podpast.ai/mcp`
 **Auth:** OAuth (sign in with your PodPast account)
+**MCP registry name:** `io.github.tomdoeswork/podpast`
 
 ## What it does
 
-- Add a podcast or YouTube show by name or URL.
-- Ask Claude what a guest said, what an episode covered, or where a specific claim came from.
-- Get the answer back with the exact quote and the timestamp it came from.
+- Add a podcast or YouTube channel by name or URL.
+- Ask one question and search every episode in your library, across several shows at once.
+- Get an answer with numbered sources that link to the episode and timestamp.
+- New episodes of the shows you follow are checked every hour.
 
 ## Install
 
-1. Create an account at https://podpast.ai and copy your personal PodPast connector URL from your account.
-2. In Claude.ai, open Settings - Connectors - Add custom connector.
-3. Paste your connector URL and sign in with your PodPast account.
+**Claude**
 
-> Each PodPast account gets its own connector URL tied to your Pod - paste the one shown in your account, not a shared link.
+1. Create a free account at https://podpast.ai/login.
+2. In Claude, open Settings, then Connectors, then Add custom connector.
+3. Paste `https://api.podpast.ai/mcp` and sign in with your PodPast account.
+
+**Claude Code**
+
+```
+claude mcp add --transport http podpast https://api.podpast.ai/mcp
+```
+
+Then run `/mcp` in Claude Code and sign in.
 
 ## Tools
 
-- `add_to_pod` - Add a show to your Pod.
 - `search_podcasts` - Find a podcast by name.
-- `analyze_podcast` - Check how many episodes are available for a show before adding.
-- `ask_pod` - Ask a question across the podcasts you follow.
-- `search_pod` - Keyword-search across your Pod.
-- `get_pod_info` - Get the current state of your Pod.
+- `analyze_podcast` - Check how many episodes are available for a show before adding it.
+- `add_to_pod` - Add a show to your Pod.
+- `ask_pod` - Ask a question across the shows you follow and get a cited answer.
+- `search_pod` - Search your Pod and get ranked transcript passages with timestamps.
+- `get_pod_info` - See what is in your Pod.
 - `get_episode_transcript` - Get a single episode's transcript.
-- `refresh_pod` - Refresh a show with the latest episodes.
+- `refresh_pod` - Pull the latest episodes for a show.
 - `remove_episode` - Remove an episode from your Pod.
-- `retry_podcast` - Retry a failed transcription.
-- `check_pod_credits` - Check your transcription-minute credit balance.
-- `buy_credits` - Buy more transcription-minute credits.
+- `retry_podcast` - Retry a show that failed to process.
+- `check_pod_credits` - Check your transcription-minute balance.
+- `buy_credits` - Buy more transcription minutes.
 
-## Wedge
+## Pricing
 
-NotebookLM, but for the podcasts you follow, inside Claude.
+- **Free, $0, no card:** 2 podcasts, the last 25 episodes of each, 30 questions a month, up to 50 YouTube videos.
+- **Pro, $12 a month or $108 a year:** 25 podcasts, the last 200 episodes of each, 1,500 questions a month, 100 transcription minutes a month.
+- **Transcription packs:** 1,000 minutes for $10 or 3,000 minutes for $30, for episodes with no published transcript. Minutes do not expire.
+
+Paid checkout is United States only. Details: https://podpast.ai/pricing
+
+## Support
+
+support@podpast.ai
