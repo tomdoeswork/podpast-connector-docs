@@ -23,7 +23,7 @@ PodPast is a hosted connector for Claude and Claude Code. Add the podcasts and Y
 **Claude**
 
 1. Create a free account at https://podpast.ai/login.
-2. In Claude, open Settings, then Connectors, then Add custom connector.
+2. In Claude, open Customize, then Connectors, then Add custom connector.
 3. Paste `https://api.podpast.ai/mcp` and sign in with your PodPast account.
 
 **Claude Code**
