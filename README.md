@@ -46,7 +46,7 @@ Then run `/mcp` in Claude Code and sign in.
 - `get_pod_info` - See what is in your Pod.
 - `get_episode_transcript` - Get a single episode's transcript.
 - `refresh_pod` - Pull the latest episodes for a show.
-- `remove_episode` - Remove an episode from your Pod.
+- `reset_episode` - Re-fetch the transcript for an episode or video.
 - `retry_podcast` - Retry a show that failed to process.
 - `check_pod_credits` - Check your transcription-minute balance.
 - `buy_credits` - Buy more transcription minutes.
