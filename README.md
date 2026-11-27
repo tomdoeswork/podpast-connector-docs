@@ -2,6 +2,8 @@
 
 PodPast is a hosted connector for Claude and Claude Code. Add the podcasts and YouTube channels you follow, and Claude can answer a question across all of them at once. Each claim in the answer points to the episode and timestamp it came from. There is nothing to install.
 
+Other tools fetch a video. PodPast remembers every show you follow. A transcript tool hands Claude one video for one chat. PodPast keeps a library of your podcasts and YouTube channels, and one question searches all of it.
+
 **Homepage:** https://podpast.ai
 **Examples:** https://podpast.ai/examples
 **Live demo (no signup):** https://podpast.ai/demo
@@ -16,7 +18,7 @@ PodPast is a hosted connector for Claude and Claude Code. Add the podcasts and Y
 - Add a podcast or YouTube channel by name or URL.
 - Ask one question and search every episode in your library, across several shows at once.
 - Get an answer with numbered sources that link to the episode and timestamp.
-- New episodes of the shows you follow are checked every hour.
+- New episodes of the podcasts you follow are checked every day. Add a YouTube channel again to pull in its newer videos.
 
 ## Install
 
