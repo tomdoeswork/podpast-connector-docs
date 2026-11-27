@@ -54,7 +54,7 @@ Then run `/mcp` in Claude Code and sign in.
 ## Pricing
 
 - **Free, $0, no card:** 2 podcasts, the last 25 episodes of each, 30 questions a month, up to 50 YouTube videos.
-- **Pro, $12 a month or $108 a year:** 25 podcasts, the last 200 episodes of each, 1,500 questions a month, 100 transcription minutes a month.
+- **Pro, $12 a month or $108 a year:** 25 podcasts, the last 200 episodes of each, 400 questions a month, 100 transcription minutes a month.
 - **Transcription packs:** 1,000 minutes for $10 or 3,000 minutes for $30, for episodes with no published transcript. Minutes do not expire.
 
 Paid checkout is United States only. Details: https://podpast.ai/pricing
