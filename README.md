@@ -1,5 +1,7 @@
 # PodPast
 
+[![tomdoeswork/podpast-connector-docs MCP server](https://glama.ai/mcp/servers/tomdoeswork/podpast-connector-docs/badges/score.svg)](https://glama.ai/mcp/servers/tomdoeswork/podpast-connector-docs)
+
 PodPast is a hosted connector for Claude and Claude Code. Add the podcasts and YouTube channels you follow, and Claude can answer a question across all of them at once. Each claim in the answer points to the episode and timestamp it came from. There is nothing to install.
 
 Other tools fetch a video. PodPast remembers every show you follow. A transcript tool hands Claude one video for one chat. PodPast keeps a library of your podcasts and YouTube channels, and one question searches all of it.
@@ -28,7 +30,22 @@ Other tools fetch a video. PodPast remembers every show you follow. A transcript
 2. In Claude, open Customize, then Connectors, then Add custom connector.
 3. Paste `https://api.podpast.ai/mcp` and sign in with your PodPast account.
 
-**Claude Code**
+**Claude Code (plugin)**
+
+```
+/plugin install podpast --marketplace tomdoeswork/podpast-connector-docs
+```
+
+On Claude Code versions before 2.1.275, add the marketplace first:
+
+```
+/plugin marketplace add tomdoeswork/podpast-connector-docs
+/plugin install podpast@podpast
+```
+
+The plugin adds the PodPast server and a short skill that tells Claude which PodPast tool fits a question. Run `/mcp` and sign in with your PodPast account.
+
+**Claude Code (server only)**
 
 ```
 claude mcp add --transport http podpast https://api.podpast.ai/mcp

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "podpast": {
+      "type": "http",
+      "url": "https://api.podpast.ai/mcp"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "podpast",
+  "version": "1.0.0",
+  "description": "Ask Claude questions across the podcasts and YouTube channels you follow. Answers cite the episode and timestamp.",
+  "author": {
+    "name": "PodPast",
+    "email": "support@podpast.ai",
+    "url": "https://podpast.ai"
+  },
+  "homepage": "https://podpast.ai/features/claude-code",
+  "repository": "https://github.com/tomdoeswork/podpast-connector-docs",
+  "license": "MIT",
+  "keywords": ["podcast", "youtube", "transcripts", "research", "mcp"]
+}

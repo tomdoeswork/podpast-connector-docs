@@ -1,0 +1,20 @@
+{
+  "name": "podpast",
+  "owner": {
+    "name": "PodPast",
+    "email": "support@podpast.ai"
+  },
+  "metadata": {
+    "description": "PodPast for Claude Code: ask questions across the podcasts and YouTube channels you follow."
+  },
+  "plugins": [
+    {
+      "name": "podpast",
+      "source": "./plugins/podpast",
+      "description": "Ask Claude questions across the podcasts and YouTube channels you follow. Answers cite the episode and timestamp.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "homepage": "https://podpast.ai/features/claude-code"
+    }
+  ]
+}
