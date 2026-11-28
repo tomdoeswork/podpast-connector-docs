@@ -1,0 +1,10 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.tomdoeswork/podpast",
+  "description": "Ask Claude about every podcast and YouTube channel you follow",
+  "version": "1.0.1",
+  "websiteUrl": "https://podpast.ai",
+  "remotes": [
+    { "type": "streamable-http", "url": "https://api.podpast.ai/mcp" }
+  ]
+}
